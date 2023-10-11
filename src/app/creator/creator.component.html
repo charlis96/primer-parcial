@@ -1,0 +1,9 @@
+<div class="contenedor">
+    <label for="name">Nombre:</label>
+    <input #searchBox1 id="name" />
+    <label for="position">Posición:</label>
+    <input #searchBox2 id="position" />
+    <label for="image">Imagen (escribir un número del 1 al 23):</label>
+    <input #searchBox3 id="image" type="number" />
+    <button type="button" class="btn btn-primary" (click)="handleButtonClick([searchBox1.value, searchBox2.value, searchBox3.value])" data-bs-dismiss="offcanvas">Crear</button>
+</div>

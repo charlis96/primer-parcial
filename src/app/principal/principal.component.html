@@ -1,0 +1,8 @@
+<app-creator (createPlayer)="createPlayer($event)"></app-creator>
+<div class="container text-center margen">
+    <div class="row">
+        <div *ngFor="let player of players" class="col-lg-4 col-md-6 col-sm-12 my-2 d-flex justify-content-center">
+            <app-card [player]="player"></app-card>
+        </div>
+    </div>
+</div>

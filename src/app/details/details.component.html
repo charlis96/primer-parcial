@@ -1,0 +1,9 @@
+<div *ngIf="player">
+    <h1>{{player.name}}</h1>
+    <h2>{{player.position}}</h2>
+    <img src="{{player.image}}" alt="Imagen de {{player.name}}">
+</div>
+<div *ngIf="!player">
+    player no encontrado.
+</div>
+<button routerLink="/principal" class="btn btn-primary">Regresar a la página principal</button>

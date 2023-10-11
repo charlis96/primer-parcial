@@ -1,0 +1,8 @@
+<div *ngIf="player" class="card fixedsize">
+    <img src="{{player.image}}" class="card-img-top" alt="Imagen de {{player.name}}.">
+    <div class="card-body">
+        <h5 class="card-title">{{player.name}}</h5>
+        <p class="card-text">{{player.position}}</p>
+        <button class="btn btn-primary" routerLink="/details/{{player.name}}">Más información</button>
+    </div>
+</div>
